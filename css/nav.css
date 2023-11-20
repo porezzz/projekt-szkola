@@ -1,16 +1,18 @@
 header{
     display: flex;
     flex-direction: column;
+    /* background-color: rgba(34, 34, 34, 0.568); */
 }
 nav {
-  background-color: whitesmoke;
+  
+  background-color: rgb(19, 19, 19);
+  color: whitesmoke;
   display: none;
   position: absolute;
   width: 100%;
-  top: 90px;
   justify-content: center;
   flex-direction: column;
-  height: 50lvh;
+  height: 100svh;
 }
 nav ul {
   display: flex;
@@ -28,6 +30,14 @@ nav ul li {
   justify-content: center;
   font-size: 2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a{
+  width: 100%;
+  padding: 50px;
+  text-align: center;
 }
 nav ul li::before{
     content: '';
@@ -41,4 +51,6 @@ span{
     padding: 15px;
     align-self: flex-end;
     font-size: 4rem !important;
+    z-index: 99;
+    color: whitesmoke;
 }
