@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import '../assets/gasstation.jpg';
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -8,7 +9,7 @@ html{
   scroll-behavior: smooth;
 }
 .bg{
-  background-image: url(/assets/gasstation.jpg);
+  background-image: url(../assets/gasstation.jpg);
   width: 100%;
   height: 100svh;
   background-position: center;

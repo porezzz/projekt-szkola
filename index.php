@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/nav.css" />
-    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/products.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -25,8 +25,8 @@
       </nav>
     </header>
     <main>
-      <!-- misc: arrow go top -->
-
+      <!-- MAYBE: arrow to go top -->
+      <!-- TODO: make database of products and somehow scrape realtime data about prices of gas -->
       <!-- HERO -->
       <section id="hero">
         <div class="text">
@@ -44,10 +44,10 @@
       <section id="about">
 
       </section>
+      <!-- Contact Form -->
       <section id="contact">
 
       </section>
-      <!-- Contact Form -->
     </main>
     <footer>
       <!-- Logo with copyright -->
@@ -55,5 +55,5 @@
       <!-- Social -->
     </footer>
   </body>
-  <script src="/js/main.js"></script>
+  <script src="./js/main.js" type="module"></script>
 </html>
