@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Sklepik</title>
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/products.css">
@@ -31,7 +31,6 @@
   </header>
   <main>
     <!-- MAYBE: arrow to go top -->
-    <!-- TODO: make database of products and somehow scrape realtime data about prices of gas -->
     <!-- HERO -->
     <section id="hero">
       <div class="text">
@@ -58,11 +57,11 @@
 
         <div class="carousel">
           <?php
-          $sql = "SELECT id, NAZWA, OPIS, CENA FROM produkty";
+          $sql = "SELECT id, NAZWA, OPIS, CENA, IMG_PATH FROM produkty";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-              echo "<div class='card'> <h2>" . $row['NAZWA']  . "</h2> <p> " . $row['id'] . "</p> <p>" . $row['OPIS'] . "</p> </div>";
+              echo "<div class='card'> <h2>" . $row['NAZWA']  . "</h2> <div class='image' style='background-image: url(" . $row['IMG_PATH'] . ")'></div> <p> Cena: " . $row['CENA'] . " zł </p> </div>";
             }
           }
           $conn->close();
