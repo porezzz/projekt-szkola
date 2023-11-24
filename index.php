@@ -42,7 +42,7 @@
     </section>
     <!-- Products -->
     <section id="products">
-      <h1 class="glow">Produkty:</h1>
+      <h1 class="glow">Produkty</h1>
       <div class="wrapper">
         <button id="btn1">
           <span class="material-symbols-outlined glow">
@@ -61,7 +61,7 @@
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-              echo "<div class='card'> <h2>" . $row['NAZWA']  . "</h2> <div class='image' style='background-image: url(" . $row['IMG_PATH'] . ")'></div> <p> Cena: " . $row['CENA'] . " zł </p> </div>";
+              echo "<div class='card'> <h2 class='glow'>" . $row['NAZWA']  . "</h2> <div class='image' style='background-image: url(" . $row['IMG_PATH'] . ")'></div> <p class='glow'> Cena: " . $row['CENA'] . "</p> </div>";
             }
           }
           $conn->close();
