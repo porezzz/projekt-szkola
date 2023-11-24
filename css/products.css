@@ -1,3 +1,66 @@
 #products{
     background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#products h1{
+    padding: 20px;
+    font-size: 3rem;
+}
+.wrapper{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    align-items: center;
+
+}
+.carousel{
+    /* left: -430px; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.card:nth-child(odd){
+    background: gray;
+    
+}
+.card{
+    text-align: center;
+    user-select: none;
+    padding: 40px;
+    height: 500px;
+    width: 350px;
+    /* border: 1px red solid; */
+}
+.wrapper button span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.wrapper button{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+.wrapper button:nth-child(odd){
+    justify-content: flex-start;
+}
+
+.wrapper button:nth-child(even){
+    left: 100%;
+    transform: translateX(-100%);
 }
