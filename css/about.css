@@ -1,0 +1,38 @@
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    color: white;
+}
+#about h1{
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#about h1::before{
+    content: '';
+    width: 35%;
+    height: 1px;
+    position: absolute;
+    transform: translateY(70px);
+    background-color: white;
+    box-shadow: 0px 0px 10px whitesmoke;
+    border: 1px white solid;
+}
+.opis{
+    width: 90%;
+    height: 70%;
+    margin: 20px;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    letter-spacing: 0.7px;
+    padding: 20px;
+}
+.opis span{
+    color: whitesmoke;
+    font-weight: bold;
+}

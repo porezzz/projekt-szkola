@@ -1,74 +1,74 @@
 header{
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgba(34, 34, 34, 0.568); */
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(34, 34, 34, 0.568); */
 }
 @keyframes In {
-  from {top: -1000px;}
-  to {top:0px}
+from {top: -1000px;}
+to {top:0px}
 }
 @keyframes Out {
-  from {top:0px}
-  to {top: -1000px;}
+from {top:0px}
+to {top: -1000px;}
 }
 .animNav{
-  animation-name: In;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+animation-name: In;
+animation-duration: 0.5s;
+animation-timing-function: ease-in-out;
 }
 .animNavRev{
-  animation-name: Out;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+animation-name: Out;
+animation-duration: 0.5s;
+animation-timing-function: ease-in-out;
 }
 nav {
-  background-color: rgb(19, 19, 19);
-  color: whitesmoke;
-  position: absolute;
-  top: -1000px;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  height: 100svh;
+background-color: rgb(19, 19, 19);
+color: whitesmoke;
+position: absolute;
+top: -1000px;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+height: 100svh;
 }
 nav ul {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  text-align: center;
-  height: 100%;
-  width: 100%;
+display: flex;
+position: relative;
+flex-direction: column;
+text-align: center;
+height: 100%;
+width: 100%;
 }
 nav ul li {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+width: 100%;
+height: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 nav ul li a{
-  width: 100%;
-  padding: 50px;
-  text-align: center;
+width: 100%;
+padding: 50px;
+text-align: center;
 }
 nav ul li::before{
-    content: '';
-    width: 100px;
-    height: 1px;
-    position: absolute;
-    transform: translateY(30px);
-    background-color: rgb(168, 168, 168);
+  content: '';
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  transform: translateY(30px);
+  background-color: rgb(168, 168, 168);
 }
-span{
-    padding: 15px;
-    align-self: flex-end;
-    font-size: 4rem !important;
-    z-index: 99;
-    position: absolute;
-    color: whitesmoke;
+header span{
+  padding: 15px;
+  align-self: flex-end;
+  font-size: 4rem !important;
+  z-index: 99;
+  position: absolute;
+  color: whitesmoke;
 }
